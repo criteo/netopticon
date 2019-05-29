@@ -13,7 +13,7 @@ import (
 )
 
 import (
-	"netopticon/snmpmagic"
+	"github.com/criteo/netopticon/snmpmagic"
 )
 
 import (

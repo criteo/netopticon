@@ -1,0 +1,17 @@
+language: go
+go:
+- 1.11.x
+branches:
+  only:
+  - master
+script:
+- make build
+sudo: false
+deploy:
+  provider: releases
+  api_key:
+    secure: HG+NEDzI9DwQA7aVPDzeKgtkrLV5XnSjn6YpLXs+JCJ3xzVs8H/W10qV4IHW8DB8oOdfcuC03PRXNE7QO9vAyqe0Zwl5gwwcA3xjKXwCi7vjCYmm6sfoRVE6dluyCNGuMD5etMbomclbV3tq24VvRylVfSa7OTv4+Tp52mdWLPX0lbzLXdcaNCeoGu4aWjQGbU3uTyihKcRI++EqciOag3MEizjX8f7jMRPNCkAfRTwNQERrykLJOwuVpAvlZfXD3QB2Pm10FRIF13fv1hMEbFqiguhlW/hxnqe535R9hduTsrnNSYn/4+1GScPzNRVqVxq0EmcWXxt+Z/zwW9e8pZe87YfDh7vgdDcsRi7iPETo2WK/58j7tGDW/Gy5K295G5l1VmGe4cVMrYnkhjjwC9cG8t8mgsZ+cDap2UVMHhGplC9w24aX6ghWkbdWA9TMv85J0vZdRSf7DavI7Npto2nBilYmdOSmcX9InB0UEZjmsCHbOO4BFBH6fEMq7bJUVMLj4OlQY5J7K+rZkxy+tZwBLfqOMCYJ7DTCMMdX1MYLSrcAF3AYF2E2aiEjPLDZH1kILK+Qwtz6H5yPgWD03p/P+PLnhvl+8zgoMfYTPSFLDtDonD+P0w0G7o7kNTH+V8XUHOzUlYnL90UFfuwC/YoVqDO0pcLRPu5W9njPS4o=
+  file: netopticon
+  on:
+    repo: criteo/netopticon
+  skip_cleanup: true

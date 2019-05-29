@@ -47,7 +47,7 @@ test:
 
 check:
 	@test -z $(shell gofmt -l main.go | tee /dev/stderr) || echo "[WARN] Fix formatting issues with 'make fmt'"
-	@go tool vet ${SRC}
+	@go vet ./...
 
 run: install
 	@$(TARGET)/
