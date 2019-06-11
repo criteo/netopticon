@@ -1,16 +1,16 @@
 language: go
 go:
-- 1.11.x
+  - 1.11.x
 branches:
   only:
   - master
 script:
-- make build
+  - make build
 sudo: false
 deploy:
   provider: releases
   api_key:
-    secure: HG+NEDzI9DwQA7aVPDzeKgtkrLV5XnSjn6YpLXs+JCJ3xzVs8H/W10qV4IHW8DB8oOdfcuC03PRXNE7QO9vAyqe0Zwl5gwwcA3xjKXwCi7vjCYmm6sfoRVE6dluyCNGuMD5etMbomclbV3tq24VvRylVfSa7OTv4+Tp52mdWLPX0lbzLXdcaNCeoGu4aWjQGbU3uTyihKcRI++EqciOag3MEizjX8f7jMRPNCkAfRTwNQERrykLJOwuVpAvlZfXD3QB2Pm10FRIF13fv1hMEbFqiguhlW/hxnqe535R9hduTsrnNSYn/4+1GScPzNRVqVxq0EmcWXxt+Z/zwW9e8pZe87YfDh7vgdDcsRi7iPETo2WK/58j7tGDW/Gy5K295G5l1VmGe4cVMrYnkhjjwC9cG8t8mgsZ+cDap2UVMHhGplC9w24aX6ghWkbdWA9TMv85J0vZdRSf7DavI7Npto2nBilYmdOSmcX9InB0UEZjmsCHbOO4BFBH6fEMq7bJUVMLj4OlQY5J7K+rZkxy+tZwBLfqOMCYJ7DTCMMdX1MYLSrcAF3AYF2E2aiEjPLDZH1kILK+Qwtz6H5yPgWD03p/P+PLnhvl+8zgoMfYTPSFLDtDonD+P0w0G7o7kNTH+V8XUHOzUlYnL90UFfuwC/YoVqDO0pcLRPu5W9njPS4o=
+    secure: TloLHm3BTcYFpnygMGR61/9HcJYiUvJSDxfEddrIv89IuDtkRJwXbfkDLHTteL43mf6Y9ig8V5Ihn6pd24PWeyPv2Q2UJDTgQ8sTiqu5/KvUpRnDfXn5Hji+KT/ZJycw0MH7aW4gG8RfZW/4VdtUT5WjRdHvR3cUviMp1Os/P5QhghyiERnYZAjLWdtOgEh1+UGHrCtmdg7oPNTBIA84AbhFThjkEfvLCxn/umQscs/jlS/xqTN3nMWTVeL5WD3/7EJH3p/ibwzxQgEqGTdnLZ5MzMiNEo6x+i81Eyp9asFz9SkrcDOA7k2Q+2jHq0DTtNsPObfuIGQydZTFDVizHzYkR8D0KmB59nST2acRs/DfQq8gbz7UC09BFq1cldFCaLccZxfRMyVhhvdFJgwQbxfwAZsLsouKRgDA0cu3+P6rfDVqkITX1ydilc7aU521yCzT1/mVIroaSV1LhAuNJIXbxRS311D63FwXtRfpy32yOUS3U2a6AjabFDAPxLaoG1tcWmbG6lH1BkYQcqDq3jXzFZCL+1VraYl5q/JXlJQHswl4M6kvin8J/n5MzCIC8aTPwreDpL+L4zEYYN2M6i4i0fz+E01Rhj/xABvSwvLST2P+Q6GJkOh9UjZkDhTJB9V/FN6OQm/a/zpWD5yj1hOJtQvYETUzHHl3R5DI3dQ=
   file: netopticon
   on:
     repo: criteo/netopticon
